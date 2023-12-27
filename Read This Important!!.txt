@@ -1,0 +1,16 @@
+# Create a ".env" File and store...
+# For My SQL DataBase Connection
+
+# Host: Your DataBase Host
+# Database name: Your DataBase name
+# Database user: Your DataBase user
+# Database password: Your DataBase password
+
+# Pip Install For the Libraries Used
+
+# pip install pandas 
+# pip install plotly 
+# pip install mysql-connector-python 
+# pip install flask 
+# pip install win10toast 
+# pip install python-dotenv
