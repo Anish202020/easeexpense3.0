@@ -254,3 +254,7 @@ def delete():
         else:
             n.show_toast("Ease Expense", "Invalid Option " , duration = 2,icon_path ="/static/logo.ico")
             return redirect("/month")
+
+# Main Function
+if __name__ == '__main__':
+    app.run(debug=True)
