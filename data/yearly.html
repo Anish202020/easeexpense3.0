@@ -1,0 +1,546 @@
+<!-- CREATE TABLE year (
+    monthname varchar(30),
+    totincome int,
+    totexpense int,
+    totsavings int,
+    Primary Key (monthname)
+); -->
+
+
+<!-- INSERT INTO year (monthname, totincome, totexpense,totsavings)
+VALUES
+  ('January',0,0,0),
+  ('February',0,0,0),
+  ('March',0,0,0),
+  ('April',0,0,0),
+  ('May',0,0,0),
+  ('June',0,0,0),
+  ('July',0,0,0),
+  ('August',0,0,0),
+  ('September',0,0,0),
+  ('October',0,0,0),
+  ('November',0,0,0),
+  ('December',0,0,0);
+  
+  
+   -->
+
+
+   <!-- # Fetch the results for January
+   sql_query = f'SELECT * FROM january ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for January
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_1 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_1 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_1 = tot_earning_1-tot_expense_1
+   
+
+   # February
+
+   sql_query = f'SELECT * FROM february ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for February
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_2 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_2 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_2 = tot_earning_2-tot_expense_2
+
+   # March
+
+   sql_query = f'SELECT * FROM march ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for march
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_3 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_3 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_3 = tot_earning_3-tot_expense_3
+
+
+
+
+
+
+
+
+
+   # April
+
+
+
+   sql_query = f'SELECT * FROM april ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for may
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_4 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_4 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_4 = tot_earning_4-tot_expense_4
+
+
+
+   # May
+
+   sql_query = f'SELECT * FROM may ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for may
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_5 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_5 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_5 = tot_earning_5-tot_expense_5
+
+   # June
+
+
+   sql_query = f'SELECT * FROM june ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for june
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_6 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_6 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_6 = tot_earning_6-tot_expense_6
+
+   # July
+
+
+   sql_query = f'SELECT * FROM july ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for july
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_7 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_7 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_7 = tot_earning_7-tot_expense_7
+
+   # August
+
+   sql_query = f'SELECT * FROM august ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for august
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_8 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_8 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_8 = tot_earning_8-tot_expense_8
+
+
+   # September
+
+   sql_query = f'SELECT * FROM september ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for september
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_9 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_9 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_9 = tot_earning_9-tot_expense_9
+
+   # October
+
+   sql_query = f'SELECT * FROM october ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for october
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_10 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_10 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_10 = tot_earning_10-tot_expense_10
+
+   # November
+
+   sql_query = f'SELECT * FROM november ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for november
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_11 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_11 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_11 = tot_earning_11-tot_expense_11
+
+
+   # December
+   sql_query = f'SELECT * FROM december ORDER BY Date ASC;'
+   
+   cursor.execute(sql_query, ())
+   result = cursor.fetchall()
+   # Data for december
+   # Income
+   income = 0
+   for i in result:
+       income += i[1]
+   # Side Hustle
+   side_hustle = 0
+   for i in result:
+       side_hustle += i[2]
+   # Stocks
+   stocks = 0
+   for i in result:
+       stocks += i[3]
+   # Food
+   food = 0
+   for i in result:
+       food += i[4]
+       # Travel
+   travel = 0
+   for i in result:
+       travel += i[5]
+   # Education
+   education = 0
+   for i in result:
+       education += i[6]
+   # Entertainment
+   entertainment = 0
+   for i in result:
+       entertainment += i[7]
+   # Total Earnings
+   tot_earning_12 = income + side_hustle+ stocks
+   # Total Expenses
+   tot_expense_12 = food + travel + education + entertainment
+   # Total Savings
+   tot_savings_12 = tot_earning_12-tot_expense_12 -->

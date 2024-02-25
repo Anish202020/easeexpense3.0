@@ -1,4 +1,6 @@
 # Loading Libaries
+# All Datas of Yearly
+import year
 
 # Ploting
 import pandas as pd
@@ -14,18 +16,19 @@ n = ToastNotifier()
 import os
 from dotenv import load_dotenv
 load_dotenv()
-import psycopg2
+
 # Flask
 app = Flask(__name__)
 
 # Configure MySQL connection
-# db = mysql.connector.connect(
-#     host=os.getenv('host'),
-#     user=os.getenv('user'),
-#     password=os.getenv('password'),
-#     database=os.getenv('database')
-# )
-db = psycopg2.connect(os.getenv('DATABASE_URL'))
+# --Here SQL Connection--
+db = mysql.connector.connect(
+    host=os.getenv('host'),
+    user=os.getenv('user'),
+    password=os.getenv('password'),
+    database=os.getenv('database')
+)
+# db = psycopg2.connect(os.getenv('DATABASE_URL'))
 # Create a cursor
 cursor = db.cursor()
 
@@ -43,7 +46,7 @@ def month():
     n.show_toast("Ease Expense", "Month Page", duration = 2,icon_path ="/static/logo.ico") 
     return render_template('month.html')
 
-# DashBoard
+# DashBoard for Monthly
 @app.route('/dashboard', methods=['POST'])
 def dashboard():
     if request.method == 'POST':
@@ -120,6 +123,13 @@ def dashboard():
                 line_html1 = fig.to_html(full_html=False)
 
                 return render_template('dashboard.html',datas=result,earnings=tot_earning,expenses=tot_expense,savings=tot_savings,month=month_name,chart_html=chart_html , line_html1=line_html1, chart_html2=chart_html2)
+
+
+# DashBoard for Yearly
+@app.route('/yearly', methods=['POST'])
+def yearly():    
+    tot_earning_1,tot_expense_1,tot_savings_1,    tot_earning_2,tot_expense_2,tot_savings_2,    tot_earning_3,tot_expense_3,tot_savings_3,     tot_earning_4,tot_expense_4,tot_savings_4,      tot_earning_5,tot_expense_5,tot_savings_5,       tot_earning_6,tot_expense_6,tot_savings_6,     tot_earning_7,tot_expense_7,tot_savings_7,           tot_earning_8,tot_expense_8,tot_savings_8,       tot_earning_9,tot_expense_9,tot_savings_9,         tot_earning_10,tot_expense_10,tot_savings_10,       tot_earning_11,tot_expense_11,tot_savings_11,           tot_earning_12,tot_expense_12,tot_savings_12=year.data_year()
+    return render_template('yearly.html',tot_earning_1=tot_earning_1,tot_expense_1=tot_expense_1,tot_savings_1=tot_savings_1 ,tot_earning_2=tot_earning_2,tot_expense_2=tot_expense_2,tot_savings_2=tot_savings_2,tot_earning_3=tot_earning_3,tot_expense_3=tot_expense_3,tot_savings_3=tot_savings_3 ,tot_earning_4=tot_earning_4,tot_expense_4=tot_expense_4,tot_savings_4=tot_savings_4,tot_earning_5=tot_earning_5,tot_expense_5=tot_expense_5,tot_savings_5=tot_savings_5,tot_earning_6=tot_earning_6,tot_expense_6=tot_expense_6,tot_savings_6=tot_savings_6,tot_earning_7=tot_earning_7,tot_expense_7=tot_expense_7,tot_savings_7=tot_savings_7,tot_earning_8=tot_earning_8,tot_expense_8=tot_expense_8,tot_savings_8=tot_savings_8,tot_earning_9=tot_earning_9,tot_expense_9=tot_expense_9,tot_savings_9=tot_savings_9,tot_earning_10=tot_earning_10,tot_expense_10=tot_expense_10,tot_savings_10=tot_savings_10,tot_earning_11=tot_earning_11,tot_expense_11=tot_expense_11,tot_savings_11=tot_savings_11,tot_earning_12=tot_earning_12,tot_expense_12=tot_expense_12,tot_savings_12=tot_savings_12)
 
 # Contribution Page
 @app.route('/contribution')
@@ -246,7 +256,7 @@ def delete():
                 return redirect("/month")
         # Delete All
         elif option=="all":
-            sql = f"DELETE FROM {month_name} "
+            sql = f"TRUNCATE TABLE {month_name} "
             cursor.execute(sql)
             db.commit()
             n.show_toast("Ease Expense", "All Records Deleted ", duration = 2,icon_path ="/static/logo.ico") 
@@ -254,6 +264,19 @@ def delete():
         else:
             n.show_toast("Ease Expense", "Invalid Option " , duration = 2,icon_path ="/static/logo.ico")
             return redirect("/month")
+
+
+
+@app.route('/yearlyy', methods=['POST'])
+def yearlyy():
+
+      
+    query = "SELECT Date, SUM(Food) AS Food, SUM(Travel) AS Travel, SUM(Education) AS Education, SUM(Entertainment) AS Entertainment FROM your_table_name GROUP BY MONTH(Date) ORDER BY Date ASC;"
+
+    query = f"SELECT Date, Food, Travel, Education, Entertainment FROM {month_name} ORDER BY Date ASC;"
+
+    
+    return render_template("yearlyy.html")
 
 # Main Function
 if __name__ == '__main__':
