@@ -10,6 +10,8 @@ Ease Expense is a personal money tracker designed to help individuals manage the
 ## Primary Purpose
 The primary purpose of Ease Expense is to track personal expenses, enabling users to gain better control over their financial health.
 
+## Dataflow Diagram
+
 <details>
   <summary>Click to See The DataFlow Diagram</summary>
 <img src="https://i.pinimg.com/736x/13/64/21/136421a476412492f31d13b3ecc91d95.jpg">
