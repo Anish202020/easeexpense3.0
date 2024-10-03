@@ -14,7 +14,7 @@ The primary purpose of Ease Expense is to track personal expenses, enabling user
 
 <details>
   <summary>Click to See The DataFlow Diagram</summary>
-<img src="https://i.pinimg.com/736x/13/64/21/136421a476412492f31d13b3ecc91d95.jpg">
+<img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Dataflow/ease%20expense.png">
 
 The Above is the Dataflow Diagram of Ease Expense
 </details>
