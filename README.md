@@ -1,6 +1,11 @@
 # Ease Expense
 <img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Banner/Banner-1/Web%20Development/7.png" alt="4" border="0">
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
+
 ## Overview
 
 <img src="https://i.ibb.co/y8Mwyjn/logo.png" alt="logo" border="0">
