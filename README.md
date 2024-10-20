@@ -1,5 +1,5 @@
 # Ease Expense
-<img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Banner/Banner-1/7.png" alt="4" border="0">
+<img src="https://github.com/Anish202020/Web-Development-Data/blob/main/Banner/Banner-1/Web%20Development/7.png" alt="4" border="0">
 
 ## Overview
 
